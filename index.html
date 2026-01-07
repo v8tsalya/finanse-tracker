@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <h1>Tracker</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="stats.html">Stats</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<main class="app">
+  <section class="summary">
+    <div class="card"><p>Income</p><h2 id="income">₹0</h2></div>
+    <div class="card"><p>Spent</p><h2 id="expense">₹0</h2></div>
+    <div class="card"><p>Balance</p><h2 id="balance">₹0</h2></div>
+  </section>
+
+  <form id="form">
+    <input id="title" placeholder="Title (Mess, Salary)" required />
+    <input id="amount" type="number" placeholder="Amount" required />
+    <select id="type">
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+    <button type="submit">Add Transaction</button>
+  </form>
+
+  <h2>Recent Transactions</h2>
+  <div id="log" class="log"></div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
